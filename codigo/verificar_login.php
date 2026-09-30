@@ -1,13 +1,12 @@
 <?php
 
-session_start();
+
 
 require_once "conexao.php";
 $email = $_POST['email'];
 $senha = $_POST['senha'];
 
 $sql ="SELECT * FROM usuario WHERE email ='$email' AND senha = '$senha'";
-
 
 $resultado = mysqli_query($conexao, $sql);
 
@@ -21,11 +20,12 @@ if ($quantidade == 1) {
     $_SESSION['apelido'] = $usuario['apelido'];
     $_SESSION['email'] = $usuario['email'];
     $_SESSION['foto'] = $usuario['foto'];
+    $_SESSION['idusuario'] = $usuario['idusuario'];
 
-    header("location: home.php");
+    header("location:home.php");
 }
 
 else {
-    header("location: index.php");
+    header("location:index.php");
 }
 ?>

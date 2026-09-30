@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>POSTAGEM</h1>
-    <form action='salvar_postagem.php' method='GET'>
+    <form action='salvar_postagem.php' method='POST'>
     INSIRA SEU TEXTO
     <input type='text' name='texto'> <br><br>
     

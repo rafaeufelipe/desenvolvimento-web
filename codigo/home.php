@@ -9,6 +9,7 @@
     <h1>PÁGINA INICIAL</h1>
     <a href="form_postagem.php">FAÇA SUA POSTAGEM</a> <br><br>
     <a href="index.php">SAIR</a><br><br>
+    <a href="listar_postagem.php">Lista de postagem</a> 
 
 </body>
 </html>
