@@ -1,9 +1,11 @@
 <?php
-$nome = $_GET['nome'];
-$apelido = $_GET['apelido'];
-$email = $_GET['email'];
-$senha = $_GET['senha'];
-$foto = $_GET['foto'];
+session_start();
+
+$nome = $_POST['nome'];
+$apelido = $_POST['apelido'];
+$email = $_POST['email'];
+$senha = $_POST['senha'];
+$foto = $_POST['foto'];
 
 $sql = "INSERT INTO usuario (nome,apelido,email,senha,foto) VALUES ('$nome','$apelido','$email','$senha','$foto');";
 

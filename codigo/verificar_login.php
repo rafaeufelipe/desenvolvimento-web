@@ -1,7 +1,10 @@
 <?php
+
+session_start();
+
 require_once "conexao.php";
-$email = $_GET['email'];
-$senha = $_GET['senha'];
+$email = $_POST['email'];
+$senha = $_POST['senha'];
 
 $sql ="SELECT * FROM usuario WHERE email ='$email' AND senha = '$senha'";
 

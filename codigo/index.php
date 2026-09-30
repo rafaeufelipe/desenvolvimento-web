@@ -6,7 +6,7 @@
     <title>PÁGINA INICIAL</title>
 </head>
 <body>
-    <form action="verificar_login.php">
+    <form action="verificar_login.php" method="POST">
     EMAIL
     <input type="text" name="email"> <br><br>
     SENHA
